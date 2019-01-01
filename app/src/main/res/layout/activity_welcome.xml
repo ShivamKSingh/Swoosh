@@ -12,16 +12,17 @@
             android:id="@+id/imageView"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" android:scaleType="centerCrop"/>
+            app:layout_constraintBottom_toBottomOf="parent" android:scaleType="centerCrop"
+            android:contentDescription="@string/background_image"/>
     <ImageView
             android:layout_width="88dp"
             android:layout_height="29dp" app:srcCompat="@drawable/swooshlogo"
             android:id="@+id/imageView2" android:layout_marginTop="24dp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" android:contentDescription="@string/app_logo"/>
     <TextView
-            android:text="GO ALL IN"
+            android:text="@string/go_all_in"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView" android:textColor="@color/colorAccent"
@@ -30,7 +31,7 @@
             app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:textAlignment="center"/>
     <TextView
-            android:text="ON GOING ALL OUT"
+            android:text="@string/on_going_all_out"
             android:layout_width="274dp"
             android:layout_height="44dp"
             android:id="@+id/textView2" android:textColor="@color/colorAccent"
@@ -52,11 +53,11 @@
     <Button
             android:layout_width="0dp"
             android:layout_height="51dp"
-            android:id="@+id/button" android:layout_marginBottom="16dp"
+            android:id="@+id/getStartedBtn" android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:fontFamily="@font/montserrat" app:layout_constraintHorizontal_bias="0.0" android:textSize="16sp"
             android:textColor="@color/colorAccent" android:background="@drawable/swoosh_button"
-            android:layout_marginEnd="16dp" android:layout_marginStart="16dp" android:text="GET STARTED"/>
+            android:layout_marginEnd="16dp" android:layout_marginStart="16dp" android:text="@string/get_started"/>
 
 </android.support.constraint.ConstraintLayout>
