@@ -1,11 +1,12 @@
-package turiya.com.swoosh
+package turiya.com.swoosh.Controller
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_league.*
+import turiya.com.swoosh.Utilities.EXTRA_LEAGUE
+import turiya.com.swoosh.R
 
 class LeagueActivity : BaseActivity() {
 
