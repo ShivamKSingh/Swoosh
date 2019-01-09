@@ -13,9 +13,22 @@ class LeagueActivity : BaseActivity() {
 
     var player = Player("", "")
 
+    override fun onSaveInstanceState(outState: Bundle?) {
+        super.onSaveInstanceState(outState)
+        outState?.putParcelable(EXTRA__PLAYER, player)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_league)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+        super.onRestoreInstanceState(savedInstanceState)
+        if (savedInstanceState!= null)
+        {
+            player = savedInstanceState.getParcelable(EXTRA__PLAYER)
+        }
     }
 
     fun onMensClicked(view: View)
